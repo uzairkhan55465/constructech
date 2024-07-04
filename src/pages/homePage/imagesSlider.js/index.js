@@ -13,11 +13,11 @@ const ImageSlider = () => {
     };
 
     return (
-        <div className='ps-[120px] bg-[#0A0909] py-16'>
-            <Slider {...settings}>
+        <div className='ps-[120px] bg-[#0A0909] pb-16 pt-[100px] '>
+            <Slider {...settings} className='mt-16 mb-10'>
                 {ImagesSlider.map((images, index) => (
                     <div key={index}>
-                        <img src={images.img} alt={`slide ${index}`} className="w-[315px]" />
+                        <img src={images.img} alt={`slide ${index}`} className="w-[200px] md:w-[260pxpx] lg:w-[270px] xl:w-[315px]" />
                     </div>
                 ))}
             </Slider>
